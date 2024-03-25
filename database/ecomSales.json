@@ -1,0 +1,25 @@
+{
+	"name": "ecomSales",
+	"properties": {
+		"Name": "ecomSales",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://output@adlsstddevsalesecom.dfs.core.windows.net/ecomSales",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "synapsedevecom-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 2,
+		"ObjectId": "cdb77a2e-31f6-445f-8bb0-c47adf8920e6"
+	},
+	"type": "DATABASE"
+}
